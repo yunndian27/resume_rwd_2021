@@ -97,6 +97,10 @@ body {
   cursor: pointer;
 }
 
+.contactInfo ul li a {
+  text-decoration: none;
+}
+
 .contactInfo ul li .icon {
   display: inline-block;
   width: 30px;
@@ -197,6 +201,7 @@ p {
 .about .box .text p {
   font-weight: 300;
   color: #777;
+  margin-top: 0;
 }
 
 .skills .box {
