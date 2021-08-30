@@ -205,16 +205,26 @@ p {
 }
 
 .skills .box {
-  position: relative;
-  width: 100%;
-  display: grid;
-  grid-template-columns: 180px 1fr;
-  justify-content: center;
-  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  flex-wrap: wrap;
+}
+
+.skillAll {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.skills .box ul li {
+  list-style: none;
+  color:#777;
 }
 
 .skills .box h4 {
-  color: #666;
+  color:#b07f6b;
   font-weight: 500;
 }
 
@@ -231,6 +241,41 @@ p {
   left: 0;
   height: 100%;
   background: #b07f6b;
+}
+
+.portfolio .portfolioAll {
+  display: flex;
+  flex-direction: row;
+}
+
+.portfolio .portfolioAll .box {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  padding: 0 .5rem;
+}
+
+.portfolio .portfolioAll h4 {
+  color: #b07f6b;
+}
+
+.portfolio .portfolioAll p {
+  margin-top: 0;
+}
+
+.portfolio .portfolioAll ul li {
+  list-style: none;
+  color: #666;
+}
+
+.portfolio .portfolioAll .material-icons {
+  font-size: 1.2rem;
+}
+
+.portfolio .portfolioAll img {
+  width: 100%;
+  margin-top: .8rem;
 }
 
 .interest ul {
