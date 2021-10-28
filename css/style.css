@@ -302,7 +302,10 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: start;
-    padding: 0 .5rem;
+    /* padding: 0 .5rem; */
+  }
+  .portfolio .portfolioAll .box:nth-child(odd) {
+    padding-right: 1rem;
   }
 }
 
@@ -334,6 +337,9 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: start;
-    padding: 0 .5rem;
+    /* padding: 0 .5rem; */
+  }
+  .portfolio .portfolioAll .box:nth-child(odd) {
+    padding-right: 1rem;
   }
 }
