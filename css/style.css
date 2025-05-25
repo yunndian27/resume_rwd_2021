@@ -8,8 +8,20 @@
   font-family: 'Noto Sans TC', sans-serif;
 }
 
+:root {
+  --main-color: #f3d9cf;
+  --main-color02: #b07f6b;
+  --main-color03: #d6b699;
+  --main-white: #fff;
+  --main-white02: #f0f0f0;
+  --main-grey: #575756;
+  --main-grey02: #777;
+  --main-grey03: #aaa;
+  --main-grey04: #666;
+}
+
 body {
-  background: #575756;
+  background: var(--main-grey);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -29,7 +41,7 @@ body {
 
 .container .leftSide {
   position: relative;
-  background: #f3d9cf;
+  background: var(--main-color);
   padding: 40px;
 }
 
@@ -59,7 +71,7 @@ body {
 }
 
 .profileText h2 {
-  color: #b07f6b;
+  color: var(--main-color02);
   font-size: 1.5em;
   margin-top: 20px;
   text-align: center;
@@ -77,13 +89,13 @@ body {
 }
 
 .title {
-  color: #575756;
+  color: var(--main-grey);
   font-size: 1.5em;
   font-family: 'Caveat', cursive;
   font-weight: 700;
   letter-spacing: 1px;
   margin-bottom: 20px;
-  border-bottom: 1px solid #777;
+  border-bottom: 1px solid var(--main-grey02);
 }
 
 .contactInfo ul {
@@ -105,11 +117,11 @@ body {
   display: inline-block;
   width: 30px;
   font-size: 18px;
-  color: #b07f6b;
+  color: var(--main-color02);
 }
 
 .contactInfo ul li span {
-  color: #575756;
+  color: var(--main-grey);
   font-weight: 300;
 }
 
@@ -118,16 +130,16 @@ body {
 }
 
 .contactInfo.education h5 {
-  color: #b07f6b;
+  color: var(--main-color02);
   font-weight: 500;
 }
 
 .contactInfo.education h4:nth-child(2) {
-  color: #575756;
+  color: var(--main-grey);
   font-weight: 500;
 }
 .contactInfo.education h4 {
-  color: #575756;
+  color: var(--main-grey);
   font-weight: 300;
 }
 
@@ -135,7 +147,7 @@ body {
   position: relative;
   width: 100%;
   height: 6px;
-  background: #d6b699;
+  background: var(--main-color03);
   display: block;
   margin-top: 5px;
 }
@@ -145,13 +157,13 @@ body {
   top: 0;
   left: 0;
   height: 100%;
-  background: #b07f6b;
+  background: var(--main-color02);
 }
 
 /* right */
 .container .rightSide {
   position: relative;
-  background: #fff;
+  background: var(--main-white);
   padding: 40px;
 }
 
@@ -167,12 +179,12 @@ body {
   font-size: 1.8em;
   font-family: 'Caveat', cursive;
   font-weight: 500;
-  color: #b07f6b;
-  border-bottom: 1px solid #d6b699;
+  color: var(--main-color02);
+  border-bottom: 1px solid var(--main-color03);
   letter-spacing: 1px;
 }
 p {
-  color: #777;
+  color: var(--main-grey02);
   font-weight: 300;
   margin-top: 20px;
 }
@@ -189,18 +201,18 @@ p {
 
 .about .box .yearCompany h5 {
   font-weight: 400;
-  color: #aaa;
+  color: var(--main-grey03);
 }
 
 .about .box .text h4 {
-  color: #b07f6b;
+  color: var(--main-color02);
   font-size: 16px;
   font-weight: 500;
 }
 
 .about .box .text p {
   font-weight: 300;
-  color: #777;
+  color: var(--main-grey02);
   margin-top: 0;
 }
 
@@ -221,11 +233,11 @@ p {
 
 .skills .box ul li {
   list-style: none;
-  color:#777;
+  color:var(--main-grey02);
 }
 
 .skills .box h4 {
-  color:#b07f6b;
+  color:var(--main-color02);
   font-weight: 500;
 }
 
@@ -233,7 +245,7 @@ p {
   position: relative;
   width: 100%;
   height: 10px;
-  background: #f0f0f0;
+  background: var(--main-white02);
 }
 
 .skills .box .percent div {
@@ -241,7 +253,7 @@ p {
   top: 0;
   left: 0;
   height: 100%;
-  background: #b07f6b;
+  background: var(--main-color02);
 }
 
 .portfolio .portfolioAll {
@@ -263,17 +275,17 @@ p {
 }
 
 .portfolio .portfolioAll h4 {
-  color: #b07f6b;
+  color: var(--main-color02);
 }
 
 .portfolio .portfolioAll p {
   margin-top: 0;
-  color: #666;
+  color: var(--main-grey04);
 }
 
 .portfolio .portfolioAll ul li {
   list-style: none;
-  color: #777;
+  color: var(--main-grey02);
 }
 
 .portfolio .portfolioAll .material-icons {
